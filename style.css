@@ -1,0 +1,117 @@
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgba(2, 4, 26, 0.8);
+  background-image: url(clock2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  text-align: center;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin-top: 15vh;
+  width: 70vw;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 2vh 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.countdown-container {
+  width: 100%;
+  margin: 4vh 0;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.big-text {
+  font-size: 30px;
+  color: rgba(2, 4, 26, 0.85);
+}
+
+.quote1,
+.quote2 {
+  width: 100%;
+}
+
+.quote2 {
+  display: none;
+}
+
+.quote-left {
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+}
+
+.quote-right {
+  display: inline-block;
+  width: 57%;
+  height: 100%;
+  text-align: left;
+  font-size: 0.5rem;
+  font-weight: 500;
+}
+
+.quote-right:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 650px) {
+  body {
+    background-image: url(clock.jpg);
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  main {
+    max-width: 530px;
+  }
+
+  .big-text {
+    font-size: 3rem;
+  }
+
+  .countdown-el span {
+    font-size: 1.5rem;
+  }
+
+  .quote1 {
+    display: none;
+  }
+
+  .quote2 {
+    display: block;
+  }
+
+  .quote-right {
+    font-size: 0.8rem;
+  }
+}
